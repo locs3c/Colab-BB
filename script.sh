@@ -11,3 +11,9 @@ echo 'export GOROOT=/usr/local/go' >> ~/.bash_profile
 echo 'export GOPATH=$HOME/go'	>> ~/.bash_profile
 echo 'export PATH=$GOPATH/bin:$GOROOT/bin:$PATH' >> ~/.bash_profile
 cp /usr/local/go/bin/go /bin/
+mkdir /root/loc-recon/
+cd /root/loc-recon/
+git clone https://github.com/projectdiscovery/subfinder.git
+cd /root/loc-recon/subfinder/v2/cmd/subfinder
+go build .
+mv subfinder /bin/
