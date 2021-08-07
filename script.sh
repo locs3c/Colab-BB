@@ -33,3 +33,18 @@ cd assetfinder
 go build
 cp assetfinder /bin/
 cd /root/loc-recon/
+#Instalando Github Subdomains
+pip install colored
+pip install tldextract
+wget https://raw.githubusercontent.com/gwen001/github-search/master/github-subdomains.py --quiet
+#Instalando Findomain
+wget https://github.com/Edu4rdSHL/findomain/releases/latest/download/findomain-linux --quiet
+chmod +x /root/loc-recon/findomain-linux
+#Instalando MassScan
+cd /root/loc-recon/
+git clone https://github.com/robertdavidgraham/masscan
+cd masscan
+make
+cd bin/
+cp masscan /bin/
+cd /root/loc-recon/
