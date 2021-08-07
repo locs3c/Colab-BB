@@ -40,11 +40,11 @@ wget https://raw.githubusercontent.com/gwen001/github-search/master/github-subdo
 #Instalando Findomain
 wget https://github.com/Edu4rdSHL/findomain/releases/latest/download/findomain-linux --quiet
 chmod +x /root/loc-recon/findomain-linux
-#Instalando MassScan
-cd /root/loc-recon/
-git clone https://github.com/robertdavidgraham/masscan
-cd masscan
-make
-cd bin/
-cp masscan /bin/
-cd /root/loc-recon/
+#Instalando MassDNS
+%cd /root/loc-recon/
+!git clone https://github.com/blechschmidt/massdns.git
+%cd massdns
+!make
+%cd bin/
+!cp massdns /bin/
+%cd /root/
