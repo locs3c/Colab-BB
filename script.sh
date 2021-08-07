@@ -3,7 +3,7 @@
 # Instalando GO Lang
 echo "Installing Golang"
 wget https://golang.org/dl/go1.16.7.linux-amd64.tar.gz
-sudo tar -xvf go1.15.linux-amd64.tar.gz
+sudo tar -xvf go1.16.7.linux-amd64.tar.gz
 sudo mv go /usr/local
 rm -rf go1.15.linux-amd64.tar.gz
 export GOROOT=/usr/local/go
